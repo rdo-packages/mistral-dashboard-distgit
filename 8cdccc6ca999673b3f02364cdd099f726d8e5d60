@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa2559ec_b00ba02a",
+        "filename": "openstack-mistral-ui.spec",
+        "patchSetId": 5
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2016-06-30T09:19:34Z",
+      "side": 1,
+      "message": "Yeah, this won\u0027t work, repo keeps only the latest build.",
+      "revId": "8cdccc6ca999673b3f02364cdd099f726d8e5d60",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
