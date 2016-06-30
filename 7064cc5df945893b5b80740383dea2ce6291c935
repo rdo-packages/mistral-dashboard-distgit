@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fa2559ec_90081c2f",
+        "filename": "openstack-mistral-ui.spec",
+        "patchSetId": 6
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 85
+      },
+      "writtenOn": "2016-06-30T09:19:21Z",
+      "side": 1,
+      "message": "If that\u0027s missing in mistralclient, please add it there.",
+      "revId": "7064cc5df945893b5b80740383dea2ce6291c935",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
