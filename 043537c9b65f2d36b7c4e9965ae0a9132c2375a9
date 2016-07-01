@@ -16,6 +16,24 @@
       "revId": "043537c9b65f2d36b7c4e9965ae0a9132c2375a9",
       "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da2a55be_e9f1b596",
+        "filename": "openstack-mistral-ui.spec",
+        "patchSetId": 7
+      },
+      "lineNbr": 78,
+      "author": {
+        "id": 94
+      },
+      "writtenOn": "2016-07-01T12:27:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "da2a55be_89c63948",
+      "revId": "043537c9b65f2d36b7c4e9965ae0a9132c2375a9",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
     }
   ]
 }
