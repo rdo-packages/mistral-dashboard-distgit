@@ -1,6 +1,7 @@
 %global pypi_name mistral-dashboard
 %global openstack_name mistral-ui
 
+
 # tests are disabled by default
 %bcond_with tests
 
