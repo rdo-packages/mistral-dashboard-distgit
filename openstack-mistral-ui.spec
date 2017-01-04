@@ -72,7 +72,7 @@ rm -rf html/.{doctrees,buildinfo}
 %{__python2} setup.py install --skip-build --root %{buildroot}
 
 # Move config to horizon
-install -p -D -m 640 _50_mistral.py.example %{buildroot}%{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/_50_mistral.py
+install -p -D -m 640 mistraldashboard/enabled/_50_mistral.py %{buildroot}%{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/_50_mistral.py
 
 %check
 PYTHONPATH=/usr/share/openstack-dashboard/ ./run_tests.sh -N -P ||:
@@ -89,4 +89,3 @@ PYTHONPATH=/usr/share/openstack-dashboard/ ./run_tests.sh -N -P ||:
 
 
 %changelog
-
