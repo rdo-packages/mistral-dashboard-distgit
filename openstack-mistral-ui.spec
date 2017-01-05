@@ -89,3 +89,4 @@ PYTHONPATH=/usr/share/openstack-dashboard/ ./run_tests.sh -N -P ||:
 
 
 %changelog
+# REMOVEME: error caused by commit http://git.openstack.org/cgit/openstack/mistral-dashboard/commit/?id=1597f842b5c33a29cc5ec80fe316ca33eae672bf
