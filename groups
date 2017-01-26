@@ -1,5 +1,5 @@
-# UUID          Group Name
-False 	Non-Interactive Users
-93827edeaddf04b72269eb0a509026c68d3c0b0f       	openstack/mistral-dashboard-distgit-core
-f763894731e07b9763b2d4c58e783ea56eb00d85        	openstack/mistral-dashboard-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+93827edeaddf04b72269eb0a509026c68d3c0b0f	openstack/mistral-dashboard-distgit-core
+f763894731e07b9763b2d4c58e783ea56eb00d85	openstack/mistral-dashboard-distgit-ptl
+global:Registered-Users                 	Registered Users
