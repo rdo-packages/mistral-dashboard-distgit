@@ -38,12 +38,14 @@ BuildRequires:  python-setuptools
 BuildRequires:  python-sphinx
 
 Requires:       openstack-dashboard >= 8.0.0
-Requires:       python-django-openstack-auth >= 2.0.0
-Requires:       python-iso8601 >= 0.1.9
+Requires:       python-django-openstack-auth >= 3.1.0
+Requires:       python-django-compressor >= 2.0
+Requires:       python-django >= 1.8
+Requires:       python-iso8601 >= 0.1.11
 Requires:       python-pbr
 Requires:       python-mistralclient
 Requires:       python-osprofiler
-Requires:       PyYAML >= 3.1.0
+Requires:       PyYAML >= 3.10
 
 %description
 Mistral Dashboard is an extension for OpenStack Dashboard that provides a UI
