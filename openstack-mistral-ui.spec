@@ -20,7 +20,6 @@ BuildArch:      noarch
 BuildRequires:  git
 BuildRequires:  openstack-dashboard >= 8.0.0
 BuildRequires:  python2-devel
-BuildRequires:  python-coverage >= 3.6
 BuildRequires:  python-django-nose >= 1.2
 BuildRequires:  python-flake8
 BuildRequires:  python-mistralclient
