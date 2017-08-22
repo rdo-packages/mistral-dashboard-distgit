@@ -37,12 +37,12 @@ BuildRequires:  python-setuptools
 BuildRequires:  python-sphinx
 
 Requires:       openstack-dashboard >= 8.0.0
-Requires:       python-django-openstack-auth >= 3.1.0
+Requires:       python-django-openstack-auth >= 3.5.0
 Requires:       python-django-compressor >= 2.0
 Requires:       python-django >= 1.8
 Requires:       python-iso8601 >= 0.1.11
 Requires:       python-pbr
-Requires:       python-mistralclient
+Requires:       python-mistralclient >= 3.1.0
 Requires:       python-osprofiler
 Requires:       PyYAML >= 3.10
 
