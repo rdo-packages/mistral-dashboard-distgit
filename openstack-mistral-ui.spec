@@ -1,3 +1,4 @@
+%global milestone .0rc1
 %global pypi_name mistral-dashboard
 %global openstack_name mistral-ui
 
@@ -7,13 +8,17 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           openstack-%{openstack_name}
-Version:        XXX
-Release:        XXX
+Version:        5.0.0
+Release:        0.1%{?milestone}%{?dist}
 Summary:        OpenStack Mistral Dashboard for Horizon
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{pypi_name}
 Source0:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz
+
+#
+# patches_base=5.0.0.0rc1
+#
 
 BuildArch:      noarch
 
@@ -90,3 +95,6 @@ PYTHONPATH=/usr/share/openstack-dashboard/ ./run_tests.sh -N -P ||:
 
 
 %changelog
+* Thu Aug 24 2017 Alfredo Moralejo <amoralej@redhat.com> 5.0.0-0.1.0rc1
+- Update to 5.0.0.0rc1
+
