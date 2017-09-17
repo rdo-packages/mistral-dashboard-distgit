@@ -35,6 +35,7 @@ BuildRequires:  python-pbr
 BuildRequires:  python-selenium
 BuildRequires:  python-setuptools
 BuildRequires:  python-sphinx
+BuildRequires: openstack-macros
 
 Requires:       openstack-dashboard >= 8.0.0
 Requires:       python-django-openstack-auth >= 3.5.0
@@ -60,7 +61,7 @@ Documentation for Mistral Dashboard
 %prep
 %autosetup -n %{pypi_name}-%{upstream_version}
 # Let RPM handle the dependencies
-rm -f test-requirements.txt requirements.txt
+%py_req_cleanup
 
 %build
 %{__python2} setup.py build
