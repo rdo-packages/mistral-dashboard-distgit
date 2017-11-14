@@ -18,7 +18,7 @@ Source0:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{upstr
 BuildArch:      noarch
 
 BuildRequires:  git
-BuildRequires:  openstack-dashboard >= 8.0.0
+BuildRequires:  openstack-dashboard >= 1:8.0.0
 BuildRequires:  python2-devel
 BuildRequires:  python-django-nose >= 1.2
 BuildRequires:  python-flake8
@@ -37,8 +37,8 @@ BuildRequires:  python-setuptools
 BuildRequires:  python-sphinx
 BuildRequires: openstack-macros
 
-Requires:       openstack-dashboard >= 8.0.0
-Requires:       python-django-openstack-auth >= 3.5.0
+Requires:       openstack-dashboard >= 1:8.0.0
+Requires:       python-django-horizon >= 1:13.0.0
 Requires:       python-django-compressor >= 2.0
 Requires:       python-django >= 1.8
 Requires:       python-iso8601 >= 0.1.11
