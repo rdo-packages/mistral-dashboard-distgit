@@ -20,30 +20,30 @@ BuildArch:      noarch
 BuildRequires:  git
 BuildRequires:  openstack-dashboard >= 1:8.0.0
 BuildRequires:  python2-devel
-BuildRequires:  python-django-nose >= 1.2
-BuildRequires:  python-flake8
-BuildRequires:  python-mistralclient
-BuildRequires:  python-mock >= 1.2
-BuildRequires:  python-mox
-BuildRequires:  python-mox3
-BuildRequires:  python-nose
+BuildRequires:  python2-django-nose >= 1.2
+BuildRequires:  python2-flake8
+BuildRequires:  python2-mistralclient
+BuildRequires:  python2-mock >= 1.2
+BuildRequires:  python2-mox
+BuildRequires:  python2-mox3
+BuildRequires:  python2-nose
 BuildRequires:  python-nose-exclude
 BuildRequires:  python-openstack-nose-plugin
-BuildRequires:  python-osprofiler
-BuildRequires:  python-oslo-sphinx
-BuildRequires:  python-pbr
+BuildRequires:  python2-osprofiler
+BuildRequires:  python2-oslo-sphinx
+BuildRequires:  python2-pbr
 BuildRequires:  python-selenium
-BuildRequires:  python-setuptools
-BuildRequires:  python-sphinx
+BuildRequires:  python2-setuptools
+BuildRequires:  python2-sphinx
 BuildRequires: openstack-macros
 
 Requires:       openstack-dashboard >= 1:8.0.0
-Requires:       python-django-compressor >= 2.0
-Requires:       python-django >= 1.8
-Requires:       python-iso8601 >= 0.1.11
-Requires:       python-pbr
-Requires:       python-mistralclient >= 3.1.0
-Requires:       python-osprofiler
+Requires:       python2-django-compressor >= 2.0
+Requires:       python2-django >= 1.8
+Requires:       python2-iso8601 >= 0.1.11
+Requires:       python2-pbr
+Requires:       python2-mistralclient >= 3.1.0
+Requires:       python2-osprofiler
 Requires:       PyYAML >= 3.10
 
 %description
