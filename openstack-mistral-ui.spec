@@ -1,4 +1,3 @@
-%global milestone .0rc1
 %global pypi_name mistral-dashboard
 %global openstack_name mistral-ui
 
@@ -9,15 +8,13 @@
 
 Name:           openstack-%{openstack_name}
 Version:        6.0.0
-Release:        0.1%{?milestone}%{?dist}
+Release:        1%{?dist}
 Summary:        OpenStack Mistral Dashboard for Horizon
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{pypi_name}
 Source0:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz
 
-#
-# patches_base=6.0.0.0rc1
 #
 
 BuildArch:      noarch
@@ -95,6 +92,9 @@ PYTHONPATH=/usr/share/openstack-dashboard/ ./run_tests.sh -N -P ||:
 
 
 %changelog
+* Wed Feb 28 2018 RDO <dev@lists.rdoproject.org> 6.0.0-1
+- Update to 6.0.0
+
 * Mon Feb 19 2018 RDO <dev@lists.rdoproject.org> 6.0.0-0.1.0rc1
 - Update to 6.0.0.0rc1
 
