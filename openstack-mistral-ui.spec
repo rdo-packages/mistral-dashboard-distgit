@@ -39,7 +39,7 @@ BuildRequires: openstack-macros
 
 Requires:       openstack-dashboard >= 1:8.0.0
 Requires:       python2-django-compressor >= 2.0
-Requires:       python2-django >= 1.8
+Requires:       python2-django >= 1.11
 Requires:       python2-iso8601 >= 0.1.11
 Requires:       python2-pbr
 Requires:       python2-mistralclient >= 3.1.0
