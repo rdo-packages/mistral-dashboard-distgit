@@ -7,7 +7,7 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           openstack-%{openstack_name}
-Version:        6.0.0
+Version:        6.0.4
 Release:        1%{?dist}
 Summary:        OpenStack Mistral Dashboard for Horizon
 
@@ -92,6 +92,9 @@ PYTHONPATH=/usr/share/openstack-dashboard/ ./run_tests.sh -N -P ||:
 
 
 %changelog
+* Wed Sep 19 2018 RDO <dev@lists.rdoproject.org> 6.0.4-1
+- Update to 6.0.4
+
 * Wed Feb 28 2018 RDO <dev@lists.rdoproject.org> 6.0.0-1
 - Update to 6.0.0
 
