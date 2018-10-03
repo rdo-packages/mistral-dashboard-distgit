@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9abe1de1_33f28870",
+        "filename": "openstack-mistral-ui.spec",
+        "patchSetId": 5
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2018-10-03T04:14:09Z",
+      "side": 1,
+      "message": "adjust this as well",
+      "range": {
+        "startLine": 59,
+        "startChar": 16,
+        "endLine": 59,
+        "endChar": 30
+      },
+      "revId": "22c716eced26228a23c31781d2f062025eb4737c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
