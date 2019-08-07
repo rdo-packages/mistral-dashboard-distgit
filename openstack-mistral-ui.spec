@@ -12,6 +12,7 @@
 
 %global pypi_name mistral-dashboard
 %global openstack_name mistral-ui
+%global with_doc 1
 
 # tests are disabled by default
 %bcond_with tests
@@ -36,10 +37,8 @@ BuildRequires:  python%{pyver}-flake8
 BuildRequires:  python%{pyver}-mistralclient
 BuildRequires:  python%{pyver}-mock >= 1.2
 BuildRequires:  python%{pyver}-osprofiler
-BuildRequires:  python%{pyver}-oslo-sphinx
 BuildRequires:  python%{pyver}-pbr
 BuildRequires:  python%{pyver}-setuptools
-BuildRequires:  python%{pyver}-sphinx
 BuildRequires: openstack-macros
 
 # Handle python2 exception
@@ -68,13 +67,19 @@ Requires:       python%{pyver}-PyYAML >= 3.10
 Mistral Dashboard is an extension for OpenStack Dashboard that provides a UI
 for Mistral.
 
+%if 0%{?with_doc}
 # Documentation package
 %package -n python%{pyver}-%{openstack_name}-doc
 Summary:        Documentation for OpenStack Mistral Dashboard for Horizon
+
+BuildRequires:  python%{pyver}-oslo-sphinx
+BuildRequires:  python%{pyver}-sphinx
+
 %{?python_provide:%python_provide python%{pyver}-%{openstack_name}-doc}
 
 %description -n python%{pyver}-%{openstack_name}-doc
 Documentation for Mistral Dashboard
+%endif
 
 %prep
 %autosetup -n %{pypi_name}-%{upstream_version}
@@ -84,9 +89,11 @@ Documentation for Mistral Dashboard
 %build
 %{pyver_build}
 
+%if 0%{?with_doc}
 sphinx-build-%{pyver} doc/source html
 # remove the sphinx-build-%{pyver} leftovers
 rm -rf html/.{doctrees,buildinfo}
+%endif
 
 %install
 %{pyver_install}
@@ -105,8 +112,10 @@ export PYTHONPATH=/usr/share/openstack-dashboard/
 %{pyver_sitelib}/*.egg-info
 %{_datadir}/openstack-dashboard/openstack_dashboard/local/enabled/_50_mistral.py*
 
+%if 0%{?with_doc}
 %files -n python%{pyver}-%{openstack_name}-doc
 %doc html
+%endif
 
 
 %changelog
