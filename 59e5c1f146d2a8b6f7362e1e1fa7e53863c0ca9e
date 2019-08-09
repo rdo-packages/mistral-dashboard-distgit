@@ -1,0 +1,9 @@
+Code-Review+2: Alfredo Moralejo <amoralej@redhat.com>
+Code-Review+2: Yatin Karel <ykarel@redhat.com>
+Workflow+1: Yatin Karel <ykarel@redhat.com>
+Verified+2: Zuul CI <zuul@review.rdoproject.org>
+Submitted-by: Zuul CI <zuul@review.rdoproject.org>
+Submitted-at: Fri, 09 Aug 2019 05:21:33 +0000
+Reviewed-on: https://review.rdoproject.org/r/21760
+Project: openstack/mistral-dashboard-distgit
+Branch: refs/heads/rpm-master
