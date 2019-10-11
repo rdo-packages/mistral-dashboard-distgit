@@ -1,4 +1,4 @@
-%global milestone .0rc1
+%global milestone .0rc2
 # Macros for py2/py3 compatibility
 %if 0%{?fedora} || 0%{?rhel} > 7
 %global pyver %{python3_pkgversion}
@@ -22,7 +22,7 @@
 
 Name:           openstack-%{openstack_name}
 Version:        9.0.0
-Release:        0.1%{?milestone}%{?dist}
+Release:        0.2%{?milestone}%{?dist}
 Summary:        OpenStack Mistral Dashboard for Horizon
 
 License:        ASL 2.0
@@ -30,7 +30,7 @@ URL:            https://pypi.python.org/pypi/%{pypi_name}
 Source0:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz
 
 #
-# patches_base=9.0.0.0rc1
+# patches_base=9.0.0.0rc2
 #
 
 BuildArch:      noarch
@@ -124,6 +124,9 @@ export PYTHONPATH=/usr/share/openstack-dashboard/
 
 
 %changelog
+* Fri Oct 11 2019 RDO <dev@lists.rdoproject.org> 9.0.0-0.2.0rc1
+- Update to 9.0.0.0rc2
+
 * Mon Sep 30 2019 RDO <dev@lists.rdoproject.org> 9.0.0-0.1.0rc1
 - Update to 9.0.0.0rc1
 
