@@ -20,7 +20,7 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           openstack-%{openstack_name}
-Version:        9.0.0
+Version:        9.0.1
 Release:        1%{?dist}
 Summary:        OpenStack Mistral Dashboard for Horizon
 
@@ -121,6 +121,9 @@ export PYTHONPATH=/usr/share/openstack-dashboard/
 
 
 %changelog
+* Thu Nov 21 2019 RDO <dev@lists.rdoproject.org> 9.0.1-1
+- Update to 9.0.1
+
 * Wed Oct 16 2019 RDO <dev@lists.rdoproject.org> 9.0.0-1
 - Update to 9.0.0
 
