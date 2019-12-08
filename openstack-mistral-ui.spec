@@ -12,7 +12,8 @@
 
 %global pypi_name mistral-dashboard
 %global openstack_name mistral-ui
-%global with_doc 1
+# oslosphinx do not work with sphinx > 2
+%global with_doc 0
 
 # tests are disabled by default
 %bcond_with tests
