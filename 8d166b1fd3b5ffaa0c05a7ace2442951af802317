@@ -25,6 +25,29 @@
     },
     {
       "key": {
+        "uuid": "cd5f4b27_86570bd1",
+        "filename": "openstack-mistral-ui.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-04-27T14:58:42Z",
+      "side": 1,
+      "message": "this also",
+      "range": {
+        "startLine": 37,
+        "startChar": 0,
+        "endLine": 37,
+        "endChar": 48
+      },
+      "revId": "8d166b1fd3b5ffaa0c05a7ace2442951af802317",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "11cfdc75_f1a66b6f",
         "filename": "openstack-mistral-ui.spec",
         "patchSetId": 1
