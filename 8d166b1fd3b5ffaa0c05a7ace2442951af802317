@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6f97a652_f763aac2",
+        "filename": "openstack-mistral-ui.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-04-27T14:58:21Z",
+      "side": 1,
+      "message": "this also",
+      "range": {
+        "startLine": 29,
+        "startChar": 0,
+        "endLine": 29,
+        "endChar": 34
+      },
+      "revId": "8d166b1fd3b5ffaa0c05a7ace2442951af802317",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "11cfdc75_f1a66b6f",
+        "filename": "openstack-mistral-ui.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 403
+      },
+      "writtenOn": "2020-04-27T14:58:21Z",
+      "side": 1,
+      "message": "can be dropped",
+      "range": {
+        "startLine": 42,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 34
+      },
+      "revId": "8d166b1fd3b5ffaa0c05a7ace2442951af802317",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": false
+    }
+  ]
+}
