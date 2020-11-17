@@ -32,7 +32,7 @@ BuildArch:      noarch
 BuildRequires:  /usr/bin/gpgv2
 %endif
 
-BuildRequires:  git
+BuildRequires:  git-core
 BuildRequires:  openstack-dashboard >= 1:17.1.0
 BuildRequires:  python3-devel
 BuildRequires:  python3-flake8
