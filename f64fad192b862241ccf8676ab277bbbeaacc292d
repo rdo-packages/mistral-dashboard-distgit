@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "dba0cb2c_63fbcc64",
+        "filename": "openstack-mistral-ui.spec",
+        "patchSetId": 1
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 128
+      },
+      "writtenOn": "2021-11-11T13:54:26Z",
+      "side": 1,
+      "message": "date format is wrong. It should be \"Thu Nov 11 2021\".",
+      "range": {
+        "startLine": 116,
+        "startChar": 0,
+        "endLine": 116,
+        "endChar": 1
+      },
+      "revId": "f64fad192b862241ccf8676ab277bbbeaacc292d",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7",
+      "unresolved": true
+    }
+  ]
+}
