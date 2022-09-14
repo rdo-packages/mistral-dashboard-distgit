@@ -47,7 +47,7 @@ BuildRequires:  python3-selenium
 Requires:       openstack-dashboard >= 1:17.1.0
 Requires:       python3-iso8601 >= 0.1.11
 Requires:       python3-pbr
-Requires:       python3-mistralclient >= 3.1.0
+Requires:       python3-mistralclient >= 4.3.0
 
 Requires:       python3-PyYAML >= 3.12
 
