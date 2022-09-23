@@ -1,5 +1,6 @@
+%global milestone .0rc1
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x01527a34f0d0080f8a5db8d6eb6c5df21b4b6363
+%global sources_gpg_sign 0xa63ea142678138d1bb15f2e303bdfd64dd164087
 
 %global pypi_name mistral-dashboard
 %global openstack_name mistral-ui
@@ -12,13 +13,17 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           openstack-%{openstack_name}
-Version:        14.0.0
-Release:        1%{?dist}
+Version:        15.0.0
+Release:        0.1%{?milestone}%{?dist}
 Summary:        OpenStack Mistral Dashboard for Horizon
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{pypi_name}
 Source0:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz
+#
+# patches_base=15.0.0.0rc1
+#
+
 # Required for tarball sources verification
 %if 0%{?sources_gpg} == 1
 Source101:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz.asc
@@ -111,6 +116,9 @@ export PYTHONPATH=/usr/share/openstack-dashboard/
 
 
 %changelog
+* Fri Sep 23 2022 RDO <dev@lists.rdoproject.org> 15.0.0-0.1.0rc1
+- Update to 15.0.0.0rc1
+
 * Mon Sep 19 2022 RDO <dev@lists.rdoproject.org> 14.0.0-1
 - Update to 14.0.0
 
