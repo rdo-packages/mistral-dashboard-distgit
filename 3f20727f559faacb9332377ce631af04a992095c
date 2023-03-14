@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ae8825ac_ef122456",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 757
+      },
+      "writtenOn": "2023-03-14T13:26:27Z",
+      "side": 1,
+      "message": "no matching package to install: \u0027openstack-dashboard \u003e\u003d 1:17.1.0\u0027",
+      "revId": "3f20727f559faacb9332377ce631af04a992095c",
+      "serverId": "270e2033-b340-4cff-9539-693957ebf0e7"
+    }
+  ]
+}
