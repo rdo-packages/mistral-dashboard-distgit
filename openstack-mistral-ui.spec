@@ -1,5 +1,5 @@
 %{!?sources_gpg: %{!?dlrn:%global sources_gpg 1} }
-%global sources_gpg_sign 0x01527a34f0d0080f8a5db8d6eb6c5df21b4b6363
+%global sources_gpg_sign 0x815AFEC729392386480E076DCC0DFE2D21C023C9
 
 %global pypi_name mistral-dashboard
 %global openstack_name mistral-ui
@@ -12,7 +12,7 @@
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
 
 Name:           openstack-%{openstack_name}
-Version:        14.0.0
+Version:        14.0.1
 Release:        1%{?dist}
 Summary:        OpenStack Mistral Dashboard for Horizon
 
@@ -113,6 +113,9 @@ export PYTHONPATH=/usr/share/openstack-dashboard/
 
 
 %changelog
+* Thu Sep 14 2023 RDO <dev@lists.rdoproject.org> 14.0.1-1
+- Update to 14.0.1
+
 * Wed Mar 30 2022 RDO <dev@lists.rdoproject.org> 14.0.0-1
 - Update to 14.0.0
 
