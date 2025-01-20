@@ -37,7 +37,6 @@ BuildRequires:  openstack-dashboard >= 1:17.1.0
 BuildRequires:  python3-devel
 BuildRequires:  python3-flake8
 BuildRequires:  python3-mistralclient
-BuildRequires:  python3-mock >= 1.2
 BuildRequires:  python3-pbr
 BuildRequires:  python3-setuptools
 BuildRequires: openstack-macros
