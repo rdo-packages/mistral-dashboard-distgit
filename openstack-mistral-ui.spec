@@ -10,6 +10,8 @@
 %bcond_with tests
 
 %{!?upstream_version: %global upstream_version %{version}%{?milestone}}
+%{?dlrn: %global tarsources mistral-dashboard}
+%{!?dlrn: %global tarsources mistral_dashboard}
 
 Name:           openstack-%{openstack_name}
 Version:        XXX
@@ -18,10 +20,10 @@ Summary:        OpenStack Mistral Dashboard for Horizon
 
 License:        ASL 2.0
 URL:            https://pypi.python.org/pypi/%{pypi_name}
-Source0:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz
+Source0:        https://tarballs.openstack.org/%{pypi_name}/%{tarsources}-%{upstream_version}.tar.gz
 # Required for tarball sources verification
 %if 0%{?sources_gpg} == 1
-Source101:        https://tarballs.openstack.org/%{pypi_name}/%{pypi_name}-%{upstream_version}.tar.gz.asc
+Source101:        https://tarballs.openstack.org/%{pypi_name}/%{tarsources}-%{upstream_version}.tar.gz.asc
 Source102:        https://releases.openstack.org/_static/%{sources_gpg_sign}.txt
 %endif
 
@@ -73,7 +75,7 @@ Documentation for Mistral Dashboard
 %if 0%{?sources_gpg} == 1
 %{gpgverify}  --keyring=%{SOURCE102} --signature=%{SOURCE101} --data=%{SOURCE0}
 %endif
-%autosetup -n %{pypi_name}-%{upstream_version}
+%autosetup -n %{tarsources}-%{upstream_version}
 # Let RPM handle the dependencies
 %py_req_cleanup
 
