@@ -112,3 +112,4 @@ export PYTHONPATH=/usr/share/openstack-dashboard/
 
 
 %changelog
+# REMOVEME: error caused by commit https://opendev.org/openstack/mistral-dashboard/commit/7c25ba023cc053b8a9d1a2ddde8daa069b1e592c
